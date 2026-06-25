@@ -1,4 +1,5 @@
 ﻿using SqlSugar;
+using Pgvector;
 
 namespace Dawning.Pgvector.SqlSugar;
 

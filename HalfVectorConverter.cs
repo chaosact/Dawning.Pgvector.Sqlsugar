@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using SqlSugar;
+using Pgvector;
 
 namespace Dawning.Pgvector.SqlSugar;
 
@@ -8,7 +9,7 @@ public class HalfVectorConverter : ISugarDataConverter
     public SugarParameter ParameterConverter<T>(object columnValue, int columnIndex)
     {
 
-        if (columnValue is not Pgvector.HalfVector value)
+        if (columnValue is not HalfVector value)
         {
             throw new ArgumentException("columnValue must be a Pgvector.HalfVector");
         }
