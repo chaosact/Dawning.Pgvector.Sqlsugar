@@ -1,2 +1,2 @@
-# Pgvector.Sqlsugar
+﻿# Dawning.Pgvector.SqlSugar
 Sqlsugar Pgvector support
